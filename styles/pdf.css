@@ -1,0 +1,65 @@
+h2{
+    font-size:17px;
+    margin-bottom:5px;
+}
+
+p{
+    margin:1px;
+}
+
+#header, #footer{
+    background-color: #2E83F2;
+    padding:5px;
+}
+
+#header img{
+    width: 150px;
+    margin: 5px;
+    padding: 10px 40px;
+}
+
+#footer{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    padding: 10px 25px 20px 25px;
+}
+
+#data, #content, #informations{
+    padding: 15px;
+}
+
+#total{
+    padding: 0 15px;
+}
+
+#content table{
+    border:1px solid #2E83F2;
+    border-collapse: collapse;
+}
+
+#content table thead{
+    background-color: #2E83F2;
+    border:1px;
+}
+
+#content table thead tr th{
+    padding:5px;
+}
+
+#content table tr, #content table td, #content table th{
+    border:1px solid #2E83F2;
+}
+
+#content table tbody tr td{
+    padding-right:10px;
+}
+
+.t-white, #footer p, #footer h2{
+    color:#fff;
+}
+
+.text-right{
+    text-align: right;
+}

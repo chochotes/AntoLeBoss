@@ -1,0 +1,25 @@
+
+RewriteEngine On
+
+
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule [^/]$ %{REQUEST_URI}/ [L,R]
+
+Options All -Indexes
+
+
+#Gestion du blog
+#RewriteRule ^blog/post/(.+)/$ index.php?page=post&id=$1 [L]
+
+
+RewriteRule ^$ index.php?page=index&url=index
+RewriteRule ^produit/(.+)/$ index.php?page=produit&identifiant=$1&url=produit/$1/ [L]
+RewriteRule ^catalogue/(.+)/$ index.php?page=catalogue&identifiant=$1&url=catalogue/$1/ [L]
+RewriteRule ^blog/(.+)/$ index.php?page=post&identifiant=$1&url=blog/$1/ [L]
+#RewriteRule ^sur-mesure/(.+)/$ index.php?page=$1$url=sur-mesure/$1/ [L]
+RewriteRule ^(.+)/$ index.php?page=$1&url=$1 [L]
+
+#ErrorDocument 404 /404.php

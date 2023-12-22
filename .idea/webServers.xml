@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="918aa4b0-a5cb-4b53-aeb2-93a2bdd0fcca" name="SiteWeb" url="http://kevinpecro.info">
+        <fileTransfer rootFolder="/httpdocs" host="kevinpecro.info" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
